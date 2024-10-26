@@ -30,7 +30,12 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 
-const countryData = {
+type CountryData = {
+  currencies: Record<string, string>,
+  payments: Record<string, string[]>
+}
+
+const countryData: CountryData = {
   currencies: {
     Afghanistan: 'Afghan Afghani',
     Albania: 'Albanian Lek',
